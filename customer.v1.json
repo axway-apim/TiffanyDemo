@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000"
+      "url": "http://localhost:8082"
     }
   ],
   "paths": {
@@ -34,56 +34,56 @@
     "schemas": {
       "customer": {
         "properties": {
-    "id": {
-      "type": "string"
-    },
-    "firstName": {
-      "type": "string"
-    },
-    "lasName": {
-      "type": "string"
-    },
-    "shippingAddress": {
-      "type": "object",
-      "properties": {
-        "number": {
-          "type": "string"
-        },
-        "street": {
-          "type": "string"
-        },
-        "city": {
-          "type": "string"
-        },
-        "state": {
-          "type": "string"
-        },
-        "zip": {
-          "type": "number"
+          "id": {
+            "type": "string"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lasName": {
+            "type": "string"
+          },
+          "shippingAddress": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "zip": {
+                "type": "number"
+              }
+            }
+          },
+          "billingAddress": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "zip": {
+                "type": "number"
+              }
+            }
+          }
         }
-      }
-    },
-    "billingAddress": {
-      "type": "object",
-      "properties": {
-        "number": {
-          "type": "string"
-        },
-        "street": {
-          "type": "string"
-        },
-        "city": {
-          "type": "string"
-        },
-        "state": {
-          "type": "string"
-        },
-        "zip": {
-          "type": "number"
-        }
-      }
-    }
-  }
       }
     }
   }
