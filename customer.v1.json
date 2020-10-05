@@ -20,7 +20,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./models/customerModel.v1.json"
+                  "$ref": "#/components/schemas/customer"
                 }
               }
             }
@@ -31,6 +31,10 @@
     }
   },
   "components": {
-    "schemas": {}
+    "schemas": {
+      "customer": {
+        "$ref": "./models/customerModel.v1.json"
+      }
+    }
   }
 }
