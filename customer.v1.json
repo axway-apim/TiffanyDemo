@@ -20,7 +20,14 @@
       "get": {
         "summary": "Your GET endpoint",
         "tags": [],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "./models/customer.v1.json"
+            }
+          }
+        },
         "operationId": "get-customer",
         "description": "Get all customers"
       }
@@ -37,7 +44,14 @@
       "get": {
         "summary": "Your GET endpoint",
         "tags": [],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "./models/customer.v1.json"
+            }
+          }
+        },
         "operationId": "get-customer-customerid"
       },
       "post": {
@@ -45,9 +59,21 @@
         "operationId": "post-customer-customerid",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "schema": {
+              "$ref": "./models/orderResponse.v1.json"
+            }
           }
-        }
+        },
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "./models/customer.v1.json"
+            }
+          }
+        ]
       },
       "delete": {
         "summary": "",

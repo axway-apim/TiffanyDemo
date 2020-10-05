@@ -59,7 +59,8 @@
           "order"
         ],
         "responses": {},
-        "operationId": "get-order-orderid"
+        "operationId": "get-order-orderid",
+        "description": "Get all orders"
       },
       "patch": {
         "summary": "Update customer order by orderid",

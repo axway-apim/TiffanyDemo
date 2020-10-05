@@ -1,10 +1,10 @@
 {
-	"name": "T2 Store",
-	"path": "/store",
+	"name": "Tiffany Customer",
+	"path": "/customer",
 	"state": "published",
 	"version": "1.0.0",
 	"organization": "API Development",
-	"apiDefinition": "store.json",
+	"apiDefinition": "customer.v1.json",
 	"image": "API.png",
 	"vhost": "phx-24.demo.axway.com:8065",
 	"tags": {
