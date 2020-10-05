@@ -48,7 +48,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "./models/customerModel.v1.json"
+              "$ref": "#/definitions/customer"
             }
           }
         },
@@ -70,7 +70,7 @@
             "in": "body",
             "name": "body",
             "schema": {
-              "type": "object"
+              "$ref": "#/definitions/customer"
             },
             "description": ""
           }
