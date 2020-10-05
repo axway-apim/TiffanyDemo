@@ -1,0 +1,76 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "store",
+    "version": "1.0"
+  },
+  "host": "localhost:3000",
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "paths": {
+    "/order": {
+      "parameters": [],
+      "post": {
+        "summary": "Create a new customer order",
+        "tags": [
+          "store",
+          "order"
+        ],
+        "responses": {},
+        "operationId": "post-order-orderid",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customer": {
+                  "$ref": "../models/customer.v1.json"
+                },
+                "item": {
+                  "$ref": "../models/item.v1.json"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "get": {
+        "summary": "Get customer order by orderid",
+        "tags": [
+          "store",
+          "order"
+        ],
+        "responses": {},
+        "operationId": "get-order-orderid"
+      },
+      "patch": {
+        "summary": "Update customer order by orderid",
+        "tags": [
+          "store",
+          "order"
+        ],
+        "responses": {},
+        "operationId": "patch-order-orderid"
+      },
+      "delete": {
+        "summary": "Delete customer order by orderid",
+        "tags": [
+          "store",
+          "order"
+        ],
+        "responses": {},
+        "operationId": "delete-order-orderid"
+      }
+    }
+  },
+  "definitions": {}
+}
