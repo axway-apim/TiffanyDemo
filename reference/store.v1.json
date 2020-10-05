@@ -23,7 +23,14 @@
           "store",
           "order"
         ],
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "../models/orderResponse.v1.json"
+            }
+          }
+        },
         "operationId": "post-order-orderid",
         "parameters": [
           {
@@ -39,9 +46,11 @@
                   "$ref": "../models/item.v1.json"
                 }
               }
-            }
+            },
+            "description": "Customer and item information"
           }
-        ]
+        ],
+        "description": "Create a customer order"
       },
       "get": {
         "summary": "Get customer order by orderid",

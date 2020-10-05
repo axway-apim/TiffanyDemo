@@ -1,0 +1,12 @@
+{
+  "title": "orderResponse",
+  "type": "object",
+  "x-tags": [
+    "order"
+  ],
+  "properties": {
+    "status": {
+      "type": "string"
+    }
+  }
+}
