@@ -1,0 +1,24 @@
+{
+  "title": "item",
+  "type": "object",
+  "x-tags": [
+    "item"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    }
+  }
+}
