@@ -48,7 +48,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "type": "object"
+              "$ref": "./models/customerModel.v1.json"
             }
           }
         },
