@@ -20,7 +20,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../models/customerModel.v1.json"
+                  "$ref": "./models/customerModel.v1.json"
                 }
               }
             }
