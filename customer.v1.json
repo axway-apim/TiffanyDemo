@@ -24,7 +24,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "type": "object"
+              "$ref": "#/definitions/customer"
             }
           }
         },
@@ -87,5 +87,15 @@
       }
     }
   },
-  "definitions": {}
+  "definitions": {
+    "customer": {
+      "title": "customer",
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "./models/customerModel.v1.json"
+        }
+      }
+    }
+  }
 }
