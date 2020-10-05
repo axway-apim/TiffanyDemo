@@ -87,15 +87,5 @@
       }
     }
   },
-  "definitions": {
-    "customer": {
-      "title": "customer",
-      "type": "object",
-      "properties": {
-        "id": {
-          "$ref": "./models/customerModel.v1.json"
-        }
-      }
-    }
-  }
+  "definitions": {}
 }
