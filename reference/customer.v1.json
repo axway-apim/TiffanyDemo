@@ -21,7 +21,8 @@
         "summary": "Your GET endpoint",
         "tags": [],
         "responses": {},
-        "operationId": "get-customer"
+        "operationId": "get-customer",
+        "description": "Get all customers"
       }
     },
     "/customer/{customerid}": {
