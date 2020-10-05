@@ -1,0 +1,59 @@
+{
+  "title": "customer",
+  "type": "object",
+  "x-tags": [
+    "customer",
+    "client"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lasName": {
+      "type": "string"
+    },
+    "shippingAddress": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "number"
+        }
+      }
+    },
+    "billingAddress": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string"
+        },
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
