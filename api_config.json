@@ -1,0 +1,21 @@
+{
+	"name": "T2 Store",
+	"path": "/store",
+	"state": "published",
+	"version": "1.0.0",
+	"organization": "API Development",
+	"apiDefinition": "store.json",
+	"image": "API.png",
+	"vhost": "phx-24.demo.axway.com:8065",
+	"tags": {
+		"nextStage": ["prod"],
+		"amplifyCentral": ["true"],
+		"department": ["retail"]
+	},
+	"outboundProfiles":{
+		"_default":{
+		   "requestPolicy":"Content Based",
+		   "responsePolicy":"Data Masking"
+		}
+	}
+}
