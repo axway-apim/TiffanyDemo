@@ -17,7 +17,7 @@
         "field": "title",
         "function": "pattern",
         "functionOptions": {
-          "match": "Stoplight"
+          "match": "Stoplight2"
         }
       }
     },
