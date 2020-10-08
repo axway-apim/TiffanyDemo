@@ -27,7 +27,8 @@
           }
         },
         "operationId": "get-customer"
-      }
+      },
+      "parameters": []
     }
   },
   "components": {

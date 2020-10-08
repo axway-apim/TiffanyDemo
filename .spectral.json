@@ -22,7 +22,7 @@
       }
     },
     "path-no-trailing-slash" : {
-      "description": "Paths should not end with `#/`.",
+      "description": "Paths should not end with `/`.",
       "type": "style",
       "given": "$.paths[*]~",
         "then": {
