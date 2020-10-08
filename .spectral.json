@@ -20,6 +20,17 @@
           "match": "Stoplight"
         }
       }
+    },
+    "path-no-trailing-slash" : {
+      "description": "Paths should not end with `#/`.",
+      "type": "style",
+      "given": "$.paths[*]~",
+        "then": {
+        "function": "pattern",
+        "functionOptions": { 
+          "notMatch": ".+\/$"
+        }
+      }
     }
   }
 }
